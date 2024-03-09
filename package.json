@@ -1,0 +1,27 @@
+{
+  "name": "avitowatch",
+  "version": "0.1.0",
+  "description": "This Telegrarm bot will alert you when there's a new avito listing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milk-Cool/avitowatch.git"
+  },
+  "keywords": [
+    "avito"
+  ],
+  "author": "Milk_Cool",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Milk-Cool/avitowatch/issues"
+  },
+  "homepage": "https://github.com/Milk-Cool/avitowatch#readme",
+  "dependencies": {
+    "https-proxy-agent": "^7.0.4",
+    "jsdom": "^24.0.0",
+    "node-telegram-bot-api": "^0.65.0"
+  }
+}
