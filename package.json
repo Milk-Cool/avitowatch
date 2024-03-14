@@ -20,8 +20,7 @@
   },
   "homepage": "https://github.com/Milk-Cool/avitowatch#readme",
   "dependencies": {
-    "https-proxy-agent": "^7.0.4",
-    "jsdom": "^24.0.0",
-    "node-telegram-bot-api": "^0.65.0"
+    "node-telegram-bot-api": "^0.65.0",
+    "puppeteer": "^22.4.1"
   }
 }
