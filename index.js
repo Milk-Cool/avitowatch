@@ -1,6 +1,7 @@
 const puppeteer = require("puppeteer");
 const TelegramBot = require("node-telegram-bot-api");
 const fs = require("fs");
+const http = require("http");
 
 const FILE = "listings.txt";
 
@@ -46,4 +47,9 @@ const check = async () => {
 };
 
 setTimeout(check); // Check immediately
-setInterval(check, 2 * 60 * 1000);
+setInterval(check, 10 * 60 * 1000);
+
+http.createServer((req, res) => {
+    res.writeHead(200);
+    res.end("hi there");
+}).listen(8080);
