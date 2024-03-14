@@ -20,7 +20,7 @@ const saveListings = () => fs.writeFileSync(FILE, listings.join("\n"));
 
 const bot = new TelegramBot(TOKEN, { "polling": false });
 
-let browser = puppeteer.launch({ "headless": false });
+let browser = puppeteer.launch({ "headless": true });
 const check = async () => {
     if(browser instanceof Promise)
         browser = await browser;
